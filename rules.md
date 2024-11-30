@@ -15,6 +15,7 @@ This document outlines our repository's workflow and branch protection rules to 
 | `feature/*` | Individual feature development | None |
 
 ### Branch Protection Overview
+
 - `main`: Protected, requires PR and review
 - `develop`: Protected, requires PR
 - `feature/*`: No restrictions
@@ -37,6 +38,7 @@ git checkout -b feature/your-feature-name
 1. Make changes in your feature branch
 2. Commit frequently with meaningful messages
 3. Push to remote regularly:
+
 ```bash
 git push origin feature/your-feature-name
 ```
@@ -44,6 +46,7 @@ git push origin feature/your-feature-name
 ### 2.3 Pull Request Process
 
 #### Submitting a PR
+
 1. Push final changes to your feature branch
 2. Visit GitHub repository
 3. Create new Pull Request
@@ -55,6 +58,7 @@ git push origin feature/your-feature-name
    - Labels: Add relevant labels
 
 #### PR Review Workflow
+
 1. Reviewer(s) examine code
 2. Address feedback if requested
 3. Obtain approval
@@ -63,6 +67,7 @@ git push origin feature/your-feature-name
 ### 2.4 Merging to Main
 
 #### Process
+
 1. Create PR from `develop` to `main`
 2. Ensure all tests pass
 3. Obtain required approvals
@@ -73,19 +78,22 @@ git push origin feature/your-feature-name
 ### Main Branch Protection
 
 #### Required
+
 - Pull request reviews (minimum 1)
 - Status checks must pass
 - Branch must be up to date
 - Linear history maintained
 
 #### Restricted
+
 - Direct pushes blocked
 - Force pushes prohibited
 - Branch deletion prevented
 
 ### Develop Branch Protection
 
-#### Required
+#### Required (develop)
+
 - Pull request reviews
 - Status checks must pass
 - Branch must be up to date
@@ -93,7 +101,8 @@ git push origin feature/your-feature-name
 ## 4. Best Practices
 
 ### Commit Messages
-```
+
+```text
 <type>: <subject>
 
 [optional body]
@@ -101,6 +110,7 @@ git push origin feature/your-feature-name
 ```
 
 #### Types
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
@@ -112,11 +122,13 @@ git push origin feature/your-feature-name
 ### Pull Requests
 
 #### Title Format
-```
+
+```text
 <type>(<scope>): <short summary>
 ```
 
 #### Description Template
+
 ```markdown
 ## Description
 [Detailed description of changes]
@@ -155,6 +167,7 @@ git push origin feature/your-feature-name
 ### Project Board Workflow
 
 #### Columns
+
 1. **Backlog**
    - Newly created issues
    - Not yet prioritized
@@ -174,6 +187,7 @@ git push origin feature/your-feature-name
 ## 6. Quick Reference
 
 ### Common Commands
+
 ```bash
 # Create feature branch
 git checkout -b feature/name
@@ -190,13 +204,13 @@ git pull origin develop
 ```
 
 ### PR Checklist
+
 - [ ] Branch up to date with develop
 - [ ] All tests passing
 - [ ] Code reviewed locally
 - [ ] Documentation updated
 - [ ] PR template completed
 - [ ] Reviewers assigned
-
 
 ---
 *Last Updated: 2024-11-11*

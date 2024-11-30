@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is backend server for rdc portal",
+  "main": "src/app.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "portal",
+    "web",
+    "jwt",
+    "video",
+    "streaming"
+  ],
+  "author": "procedure",
+  "license": "proprietary"
+}
