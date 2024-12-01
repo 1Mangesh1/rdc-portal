@@ -1,21 +1,28 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "this is backend server for rdc portal",
-  "main": "src/app.ts",
+  "description": "portal's backend",
+  "main": "app.ts",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "jest"
+    "start": "ts-node src/app.ts",
+    "build": "tsc",
+    "serve": "node dist/app.js",
+    "dev": "nodemon --watch src --exec ts-node src/app.ts"
   },
-  "keywords": [
-    "portal",
-    "web",
-    "jwt",
-    "video",
-    "streaming"
-  ],
-  "author": "procedure",
-  "license": "proprietary"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "nodemon": "^2.0.15"
+  }
 }
