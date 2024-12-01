@@ -40,3 +40,9 @@ temp/
 
 # Windows system files
 Thumbs.db
+
+# config
+config.js
+
+#.sequelizerc
+.sequelizerc
