@@ -46,3 +46,6 @@ config.js
 
 #.sequelizerc
 .sequelizerc
+
+# migrations
+migrations/
