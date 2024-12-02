@@ -19,6 +19,7 @@ npx sequelize-cli init
 ```
 
 This will create the following folders:
+
 - `config`: Configuration files
 - `models`: Model definitions
 - `migrations`: Migration files

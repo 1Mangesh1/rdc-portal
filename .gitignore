@@ -42,7 +42,7 @@ temp/
 Thumbs.db
 
 # config
-config.js
+config.ts
 
 #.sequelizerc
 .sequelizerc
