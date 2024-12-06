@@ -41,8 +41,6 @@ temp/
 # Windows system files
 Thumbs.db
 
-# config
-config.ts
 
 #.sequelizerc
 .sequelizerc
