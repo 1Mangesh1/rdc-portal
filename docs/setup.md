@@ -37,34 +37,32 @@ export const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER,
 Create a file named `config.ts` in your project directory and add the following content:
 
 ```typescript
-module.exports = {
-    development: {
-      username: 'me',
-      password: 'password',
-      database: 'rdc',
-      host: 'localhost',
-      port: 5432,
-      dialect: 'postgres',
-    },
-    // test: {
-    //   username: 'me',
-    //   password: 'password',
-    //   database: 'rdc_test',
-    //   host: 'localhost',
-    //   port: 5432,
-    //   dialect: 'postgres',
-    // },
-    // production: {
-    //   username: 'me',
-    //   password: 'password',
-    //   database: 'rdc_prod',
-    //   host: 'localhost',
-    //   port: 5432,
-    //   dialect: 'postgres',
-    // },
-  };
-  
+development: {
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  dialect: process.env.DB_DIALECT,
+},
+// test: {
+//   username: process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   database: process.env.DB_NAME,
+//   host: process.env.DB_HOST,
+//   port: process.env.DB_PORT,
+//   dialect: process.env.DB_DIALECT,
+// },
+// production: {
+//   username: process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   database: process.env.DB_NAME,
+//   host: process.env.DB_HOST,
+//   port: process.env.DB_PORT,
+//   dialect: process.env.DB_DIALECT,
+// },
 ```
+  
 
 ## 4. Write `.env`
 

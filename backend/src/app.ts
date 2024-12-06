@@ -26,7 +26,7 @@ app.post('/users', async (req: Request, res: Response) => {
     const user = await createUser(req.body);
     res.status(201).json(user);
   } catch (error) {
-    res.status(500).send('Error creating user');
+    res.status(500).send(`Error creating user ${error}`,);
   }
 });
 
