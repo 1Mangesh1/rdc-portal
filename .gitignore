@@ -42,8 +42,5 @@ temp/
 Thumbs.db
 
 
-#.sequelizerc
-.sequelizerc
-
 # migrations
 migrations/
