@@ -27,7 +27,7 @@ This will create the following folders:
 
 ### 2. Configure Database
 
-Edit the `config/config.json` file to set up your database configuration for different environments (development, test, production).
+Edit the `config/config.ts` file to set up your database configuration for different environments (development, test, production).
 
 ### 3. Create a Migration
 

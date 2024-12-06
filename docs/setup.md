@@ -63,7 +63,6 @@ development: {
 // },
 ```
   
-
 ## 4. Write `.env`
 
 Create a `.env` file in your project directory and add your database configuration:
