@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans");
+
+.rubberDuckHeading {
+  /* margin-right: 3rem; */
+  font-family: "Reddit Sans";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.rubberDuckHeading span {
+  /* display: inline; */
+  color: #e6b72b;
+}
